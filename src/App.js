@@ -5,7 +5,6 @@ import './App.css'
 
 const App = () => {
   const [showTooltip, setShowTooltip] = useState(false);
-
   const handleMouseEnter = () => {
     setShowTooltip(true);
   };
@@ -24,7 +23,7 @@ const App = () => {
         Hover me!
       </button>
       <div className='tooltip-container'>
-          {showTooltip && (<Tooltip position="bottom">Tooltip content</Tooltip>)}
+          {showTooltip && (<Tooltip position="bottom"  children = "Tooltip content" ></Tooltip>)}
       </div>
     </div>
   );
