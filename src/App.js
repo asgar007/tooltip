@@ -24,8 +24,8 @@ const App = () => {
         Hover me!
       </button>
       <div className='tooltip-container'>
-          {showTooltip && (<Tooltip>Tooltip content</Tooltip>)}
-        </div>
+          {showTooltip && (<Tooltip position="bottom">Tooltip content</Tooltip>)}
+      </div>
     </div>
   );
 };

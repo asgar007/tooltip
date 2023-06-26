@@ -1,9 +1,9 @@
 import React from 'react';
 import './Tooltip.css';
 
-const Tooltip = ({ children }) => {
+const Tooltip = ({position, children }) => {
   return (
-    <div className='name'>{children}</div>
+    <div className={position}>{children}</div>
   );
 };
 
